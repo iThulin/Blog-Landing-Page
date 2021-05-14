@@ -1,0 +1,36 @@
+/* Fonts
+font-family: 'Overpass', sans-serif;
+weights: 300, 600
+
+font-family: 'Ubuntu', sans-serif;
+weights: 400, 500, 700
+*/
+h1 {
+  font-family: 'Overpass';
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Overpass';
+  font-weight: 300;
+}
+
+.title-box {
+  background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
