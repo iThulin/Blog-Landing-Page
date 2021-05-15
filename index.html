@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <!-- Style Sheets -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,18 +23,18 @@
 </head>
 
 <body>
-  <div class="title-box">
+  <div class="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-          <img src="images/logo.svg" />
+        <img src="images/logo.svg" />
+        <a class="navbar-brand header-nav" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Product</a>
+              <a class="btn-nav dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Product</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Overview</a></li>
                 <li><a class="dropdown-item" href="#">Pricing</a></li>
@@ -42,8 +43,8 @@
                 <li><a class="dropdown-item" href="#">Integrations</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Company</a>
+            <li class="nav-item dropdown">
+              <a class="btn-nav dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Company</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">About</a></li>
                 <li><a class="dropdown-item" href="#">Team</a></li>
@@ -51,8 +52,8 @@
                 <li><a class="dropdown-item" href="#">Careers</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Connect</a>
+            <li class="nav-item dropdown">
+              <a class="btn-nav dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Connect</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Contact</a></li>
                 <li><a class="dropdown-item" href="#">Newsletter</a></li>
@@ -62,63 +63,77 @@
           </ul>
         </div>
         <div class="col-lg-3">
-          <button type="button" class="btn btn-link">Login</button>
-          <button type="button" class="btn btn-light">Sign Up</button>
+          <a class="btn-nav" role="button" aria-expanded="false">Login</a>
+          <button type="button" class="btn btn-light btn-nav-light rounded-pill">Sign Up</button>
         </div>
       </div>
     </nav>
     <h1>A modern publishing platform</h1>
     <p>Grow your audience and build your online brand</p>
-    <button type="button" class="btn btn-light">Start for Free</button>
-    <button type="button" class="btn">Learn More</button>
+    <div class="nav-buttons">
+      <button type="button" class="btn btn-light btn-nav-light rounded-pill">Start for Free</button>
+      <button type="button" class="btn btn-outline-light btn-nav rounded-pill">Learn More</button>
+    </div>
   </div>
 
-  <h2>Designed for the future</h2>
+  </div>
+  <div class="design-block">
+    <h2>Designed for the future</h2>
+    <h3>Introducing an extensible editor</h3>
+    <p>
+      Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+      The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+      videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+      change the looks of a blog.
+    </p>
+    <h3>Robust content management</h3>
+    <p>
+      Flexible content management enables users to easily move through posts. Increase the usability of your blog
+      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+    </p>
+  </div>
+  <div class="infrastructure-block">
+    <h3>State of the Art Infrastructure</h3>
+    <p>
+      With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+    </p>
+  </div>
+  <div class="design-block">
+    <h3>Free, open, simple</h3>
+    <p>
+      Blogr is a free and open source application backed by a large community of helpful developers. It supports
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    </p>
+    <h3>Powerful tooling</h3>
+    <p>
+      Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.
+    </p>
+  </div>
+  <div class="footer">
+    Product
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-  change the looks of a blog.
+    Overview
+    Pricing
+    Marketplace
+    Features
+    Integrations
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+    Company
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+    About
+    Team
+    Blog
+    Careers
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    Connect
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-
+    Contact
+    Newsletter
+    LinkedIn
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.

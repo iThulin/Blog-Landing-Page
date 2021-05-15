@@ -8,23 +8,53 @@ weights: 400, 500, 700
 h1 {
   font-family: 'Overpass';
   font-weight: 600;
+  font-size: 4rem;
+  padding: 100px 0 10px 0;
 }
 
 p {
   font-family: 'Overpass';
   font-weight: 300;
-}
-
-.title-box {
-  background: linear-gradient(to bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  text-align: center;
+  font-size: 1.2rem;
+  color: white;
   color: hsl(0, 0%, 100%);
 }
 
+.header {
+  background-image:
+  url("images/bg-pattern-intro.svg"),
+  linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  height: 500px;
+  background-position: 40% 50%;
+  background-size: auto;
+  text-align: center;
+  color: white;
+  color: hsl(0, 0%, 100%);
+  padding: 2% 5% 2% 5%;
+}
 
+.btn-nav {
+  font-family: 'Overpass';
+  font-weight: 300;
+  font-size: .9rem;
+  color: white;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+}
 
-
-
+ .btn-nav-light {
+   font-family: 'Overpass';
+   font-weight: 600;
+   font-size: 1rem;
+   color: red;
+   color: hsl(353, 100%, 62%);
+   text-decoration: none;
+   padding: 10px 20px 10px 20px;
+ }
+.nav-buttons {
+  padding: 20px 10px 50px 10px;
+}
 
 .attribution {
   font-size: 11px;
@@ -32,5 +62,6 @@ p {
 }
 
 .attribution a {
+  color: blue;
   color: hsl(228, 45%, 44%);
 }
